@@ -9,7 +9,7 @@
 ## INSTALAÇÃO
 1. Clone o repositório:
 ```bash
-   git clone https://github.com/laravel/laravel.git
+   git clone https://github.com/devmattheusalfaia/laravel.git
 ```
 2. Navegue até o diretório do projeto:
 ```bash
