@@ -39,7 +39,11 @@ alias sail='./vendor/bin/sail'
 ```bash
 sail up -d
 ```
-8. Acesse o aplicativo no navegador:
+8. Execute as migrações do banco de dados:
+```bash
+sail artisan migrate
+```
+9. Acesse o aplicativo no navegador:
 ```bash
 http://localhost
 ```
