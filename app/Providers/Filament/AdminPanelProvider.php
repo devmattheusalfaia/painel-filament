@@ -18,11 +18,17 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
+use Filament\Navigation\MenuItem;
+
 class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
         return $panel
+            ->sidebarCollapsibleOnDesktop() // Adiciona o botão de colapsar
+            ->sidebarFullyCollapsibleOnDesktop() // Permite colapsar completamente
+            ->sidebarWidth('18rem')
+            ->collapsedSidebarWidth('9rem')
             ->default()
             ->id('admin')
             ->path('admin')
