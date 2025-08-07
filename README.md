@@ -59,7 +59,7 @@ http://localhost/admin
 ```
 2. Para criar um novo usuário administrador, execute o comando:
 ```bash
-sail artisan make:admin
+sail artisan make:filament-user
 ```
 
 ## Filament Dev commands
